@@ -1,0 +1,5 @@
+# ignore downloaded files
+download/*
+
+# ignore toolbox files
+toolbox/*
