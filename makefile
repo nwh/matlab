@@ -11,6 +11,7 @@ download/cvx-rd.zip:
 toolbox/cvx/.made: download/cvx-rd.zip
 	mkdir -p toolbox
 	unzip	download/cvx-rd.zip -d toolbox
+	matlab -nodisplay -r "cd toolbox/cvx; cvx_setup; exit"
 	touch $@
 
 ## jsonlab
