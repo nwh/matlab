@@ -3,3 +3,6 @@ download/*
 
 # ignore toolbox files
 toolbox/*
+
+# ignore editor temp files
+*~
