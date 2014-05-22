@@ -3,17 +3,22 @@
 This directory contains tools to automatically download and configure external
 Matlab tools.
 
+This directory should be downloaded to the home directory.
+
 ## Included tools
 
 * CVX: <http://cvxr.com/>
 * JSONLab: <http://iso2mesh.sourceforge.net/cgi-bin/index.cgi?jsonlab>
 
-## Usage
+## Download and Usage
 
 From command line:
 
 ```
+$ cd ~
+$ git clone https://github.com/nwh/matlab.git
+...
+$ cd matlab
 $ make
+...
 ```
-
-http://downloads.sourceforge.net/project/iso2mesh/jsonlab/0.9.9%20%28Optimus%20beta%29/jsonlab-1.0beta.tar.gz
