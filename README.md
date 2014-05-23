@@ -13,6 +13,10 @@ This directory should be downloaded to the home directory.
 ## Included scripts
 
 * `src/mypath.m`: Matlab's `path` command without Matlab toolboxes
+* `grad_check.m`: tool to check analytic gradient with forward finite difference
+* `grad_fd.m`: evaluate forward finite difference gradient
+* `hess_check.m`: tool to check analytic Hessian with forward finite difference
+* `hess_fd.m`: evaluate forward finite difference Hessian
 
 ## Download and Usage
 
