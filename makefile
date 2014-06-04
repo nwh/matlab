@@ -1,6 +1,9 @@
 
 .PHONY: all
-all: toolbox/cvx/.made toolbox/jsonlab/.made
+all: \
+	toolbox/cvx/.made \
+	toolbox/jsonlab/.made \
+	$(HOME)/Documents/MATLAB/startup.m
 
 ## CVX
 
@@ -27,6 +30,12 @@ toolbox/jsonlab/.made: download/jsonlab-1.0beta.tar.gz
 	tar -xzvf download/jsonlab-1.0beta.tar.gz -C toolbox/
 	touch $@
 
+## create link for startup.m script
+
+$(HOME)/Documents/MATLAB/startup.m:
+	mkdir -p $(HOME)/Documents/MATLAB/
+	ln -s $(PWD)/startup.m $@
+
 ## clean up
 
 .PHONY: clean
@@ -36,3 +45,8 @@ clean:
 .PHONY: clean_download
 clean_download:
 	$(RM) -r download
+
+## debugging
+# print helper
+print-%:
+	@echo $* := $($*)
