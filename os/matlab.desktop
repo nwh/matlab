@@ -1,0 +1,8 @@
+# place file in ~/.local/share/applications
+[Desktop Entry]
+Encoding=UTF-8
+Name=Matlab
+Exec=/opt/matlab/R2013b/bin/matlab -desktop
+Icon=/home/nwh/config/matlab/matlab.png
+Type=Application
+Categories=Development;
